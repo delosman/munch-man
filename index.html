@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Munch Man</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Munch Man</h1>
+  <canvas id="gameCanvas" width="320" height="320"></canvas>
+  <div id="ui">
+    <p>Score: <span id="score">0</span></p>
+    <p>Lives: <span id="lives">3</span></p>
+    <div id="controls">
+      <button onclick="move('up')">⬆️</button><br>
+      <button onclick="move('left')">⬅️</button>
+      <button onclick="move('down')">⬇️</button>
+      <button onclick="move('right')">➡️</button>
+    </div>
+  </div>
+  <script src="js/game.js"></script>
+</body>
+</html>
